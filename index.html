@@ -1,1 +1,150 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para meu melhor amigo ❤️</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#000;
+    color:#fff;
+    font-family:"Courier New", monospace;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    overflow:hidden;
+}
+
+/* Efeito VHS */
+body::before{
+    content:"";
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:repeating-linear-gradient(
+        to bottom,
+        rgba(255,255,255,.04) 0px,
+        rgba(255,255,255,.04) 2px,
+        transparent 2px,
+        transparent 4px
+    );
+    pointer-events:none;
+    animation:vhs .15s infinite;
+}
+
+@keyframes vhs{
+    0%{transform:translateY(0);}
+    50%{transform:translateY(2px);}
+    100%{transform:translateY(0);}
+}
+
+#botao{
+    padding:18px 35px;
+    font-size:22px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    background:white;
+    color:black;
+}
+
+#texto{
+    display:none;
+    max-width:800px;
+    padding:30px;
+    text-align:center;
+    line-height:1.8;
+    animation:fade 1.5s ease;
+}
+
+@keyframes fade{
+    from{
+        opacity:0;
+        transform:scale(.95);
+    }
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<button id="botao" onclick="mostrar()"></button>
+
+<div id="texto">
+    <h1>❤️ Para o meu melhor amigo ❤️</h1>
+    <br>
+
+    <p>
+        Eu queria fazer esse pequeno site só para deixar registrado o quanto
+        a nossa amizade significa para mim.
+    </p>
+
+    <br>
+
+    <p>
+        Você esteve comigo em momentos que talvez nem imagine o quanto fizeram
+        diferença. Cada conversa, cada risada, cada brincadeira e até aqueles
+        momentos em silêncio ficaram guardados na minha memória.
+    </p>
+
+    <br>
+
+    <p>
+        E eu cheguei à conclusão de uma coisa muito importante:
+        nossa amizade consegue ser melhor do que qualquer Monster que existe.
+        Sim, até melhor que o Monster Branco Original, melhor que o de Manga,
+        melhor que o de Uva... e sinceramente, melhor que qualquer sabor que
+        inventarem no futuro.
+    </p>
+
+    <br>
+
+    <p>
+        Uma lata de Monster acaba em alguns minutos.
+        Já a amizade que construímos continua todos os dias e vale muito mais
+        do que qualquer bebida.
+    </p>
+
+    <br>
+
+    <p>
+        Obrigado por sempre estar presente, pelas piadas, pelas conversas e por
+        fazer parte da minha vida. Espero que a gente continue criando muitas
+        lembranças e que nossa amizade dure por muitos e muitos anos.
+    </p>
+
+    <br>
+
+    <p>
+        Nunca esqueça que você é uma pessoa muito importante para mim.
+    </p>
+
+    <br>
+
+    <h2>❤️ Você é insubstituível. ❤️</h2>
+</div>
+
+<script>
+function mostrar(){
+    document.getElementById("botao").style.display = "none";
+    document.getElementById("texto").style.display = "block";
+}
+</script>
+
+</body>
+</html>
